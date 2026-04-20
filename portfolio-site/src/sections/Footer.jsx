@@ -1,7 +1,7 @@
-function Skills() {
+function Footer() {
     return (
         <div></div>
     )
 }
 
-export default Skills
+export default Footer
