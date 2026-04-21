@@ -6,7 +6,7 @@ function Projects() {
     ]
     return (
         <section>
-            <h2>My Projects</h2>
+            <h1>My Projects</h1>
             <p>
                 A collection of projects I've worked on...
             </p>

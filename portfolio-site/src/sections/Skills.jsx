@@ -1,7 +1,7 @@
 function Skills() {
     return (
         <section>
-            <h2>Skill & Technologies</h2>
+            <h1>Skill & Technologies</h1>
             <div>
                 <h3>IT Specialist</h3>
                 <div>
