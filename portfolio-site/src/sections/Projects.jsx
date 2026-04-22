@@ -5,7 +5,7 @@ function Projects() {
         { id: 3, title: 'Task Manager App' },
     ]
     return (
-        <section>
+        <section id="projects">
             <h1>My Projects</h1>
             <p>
                 A collection of projects I've worked on...

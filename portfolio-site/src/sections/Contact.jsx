@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <section>
+        <section id="contact">
             <h1>Let's work together</h1>
             <div>
                 <div>
