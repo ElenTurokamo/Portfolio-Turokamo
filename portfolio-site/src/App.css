@@ -165,6 +165,59 @@ input {
 }
 
 .about {
-  padding : 80px 20px;
+  padding: 120px 80px 40px 80px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
   text-align: left;
+  margin-bottom: 20px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.about-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about-sfx {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  transform: scale(0.7);
+
+  object-fit: contain;
+
+  z-index: 2;
+  pointer-events: none;
 }

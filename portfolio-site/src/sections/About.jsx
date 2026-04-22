@@ -1,13 +1,36 @@
+import icon from "../assets/icon.png";
+import sfx from "../assets/SFX.png";
+
 function About() {
     return (
         <section id="about" className="about">
-            <div>
-                <h1>About me</h1>
-                <p>I'm Elen, a programmer and solo developer from Kazakhstan.
-                    I focus on building things that actually work and scale, not just prototypes for show. I care about understanding systems end-to-end: architecture, data flow, edge cases, and what will break later if it’s done poorly now. Refactoring and rethinking solutions is part of my normal workflow, not a failure.
-                    Right now I’m actively working on Deus Weather Bot — a weather bot with a clean backend, database-driven logic, and a strong focus on structure, reliability, and future extensibility. It’s not just “get data and print it”, but a project where I deliberately practice proper architecture and long-term maintainability.
-                    I constantly learn by building, breaking, fixing, and rebuilding systems until they make sense. If something feels fragile or unclear — I won’t leave it that way.
-                </p>
+            <div className="container">
+
+                <div className="about-layout">
+
+                <div className="about-text">
+                    <h1 className="about-title">About me</h1>
+
+                    <p className="about-first">
+                    I'm Elen — an independent developer who treats every project as a step into unfamiliar territory. My path isn't linear, but each challenge deliberately expands what I'm capable of.
+                    </p>
+
+                    <p className="about-second">
+                    I'm working toward becoming a specialist with no geographical or industry limits — someone who anticipates problems before they exist and builds solutions that stand the test of time.
+                    </p>
+
+                    <p className="about-third">
+                    Progress, to me, is earned through persistence. Setbacks sharpen my focus rather than break it. I'm not chasing quick wins — I'm building something that lasts.
+                    </p>
+                </div>
+
+                <div className="about-image">
+                    <img src={icon} alt="About me" className="about-img" />
+                    <img src={sfx} alt="effects" className="about-sfx" />
+                </div>
+
+                </div>
+
             </div>
         </section>
     )
