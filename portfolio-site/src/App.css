@@ -165,7 +165,7 @@ input {
 }
 
 .about {
-  padding: 120px 80px 40px 80px;
+  padding: 120px 80px 40px 140px;
 }
 
 .about-title {
@@ -221,3 +221,57 @@ input {
   z-index: 2;
   pointer-events: none;
 }
+
+.skills {
+  padding: 50px 80px 40px 140px;
+}
+
+.skills-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+
+.skill-stacks {
+  border: solid #F2C99A;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 350px;
+}
+
+.skill-stack {
+  padding: 10px;
+}
+
+.skill {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.stack {
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 2px solid #D4855A;
+  border-radius: 20px;
+  background-color: #F5EDD8;
+  transition: ease 0.3s;
+}
+
+.stack:hover {
+  background-color: #D4855A;
+  color: var(--body-bgcolor);
+}
+
