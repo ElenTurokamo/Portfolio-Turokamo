@@ -12,7 +12,7 @@ function About() {
                     <h1 className="about-title">About me</h1>
 
                     <p className="about-first">
-                    I'm Elen — an independent developer who treats every project as a step into unfamiliar territory. My path isn't linear, but each challenge deliberately expands what I'm capable of.
+                    I'm <span className="hero-name">Elen</span> — an independent developer who treats every project as a step into unfamiliar territory. My path isn't linear, but each challenge deliberately expands what I'm capable of.
                     </p>
 
                     <p className="about-second">

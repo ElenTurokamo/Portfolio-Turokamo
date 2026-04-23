@@ -17,7 +17,7 @@ function Hero() {
                     </p>
 
                     <p className="hero-about">
-                        I'm a passionate full-stack developer with experience in building modern web applications.
+                        I'm a passionate full-stack developer with experience in building modern long-term solutions.
                     </p>
 
                     <div className="hero-actions">

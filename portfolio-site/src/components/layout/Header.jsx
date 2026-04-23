@@ -29,7 +29,7 @@ function Header() {
     <header className={showHeader ? 'header show' : 'header hide'}>
         <div className="container">
             <nav className="navbar">
-                <a href="#home" className="logo">
+                <a href="#" className="logo">
                     Elen
                 </a>
 

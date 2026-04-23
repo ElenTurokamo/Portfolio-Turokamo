@@ -189,7 +189,7 @@ input {
 .about-text p {
   margin-bottom: 18px;
   line-height: 1.7;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .about-image {
@@ -238,12 +238,13 @@ input {
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 40px;
-  column-gap: 20px;
+  row-gap: 20px;
+  column-gap: 10px;
 }
 
 .skill-stacks {
-  border: solid #F2C99A;
+  background-color: #EAD9BC;
+  border: solid #F2C99A 2px;
   border-radius: 20px;
   padding: 20px;
   max-width: 350px;
@@ -254,6 +255,7 @@ input {
 }
 
 .skill {
+  color: #D4855A;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -266,7 +268,7 @@ input {
   margin: 5px;
   border: 2px solid #D4855A;
   border-radius: 20px;
-  background-color: #F5EDD8;
+  background-color: var(--body-bgcolor);
   transition: ease 0.3s;
 }
 
