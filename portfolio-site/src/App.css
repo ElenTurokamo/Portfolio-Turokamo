@@ -133,37 +133,55 @@ input {
 .hero-actions {
   display: flex;
   gap: 40px;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
-.btn.btn-primary {
+.hero-projects {
   padding: 10px 20px;
-  background-color: var(--body-bgcolor);
-  color: #333;
+  background-color: #D4855A;
+  color: var(--body-bgcolor);
   border: 3px solid #D4855A;
   border-radius: 40px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.btn.btn-secondary {
+.hero-contact {
   padding: 10px 20px;
-  background-color: var(--body-bgcolor);
-  color: #333;
+  background-color: #D4855A;
+  color: var(--body-bgcolor);
   border: 3px solid #D4855A;
   border-radius: 40px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.btn.btn-primary:hover {
-  background-color: #D4855A;
+.hero-projects:hover {
+  transform: translateY(-3px);
   color: var(--body-bgcolor);
 }
 
-.btn.btn.btn-secondary:hover {
-  background-color: #D4855A;
+.hero-contact:hover {
+  transform: translateY(-3px);
   color: var(--body-bgcolor);
+}
+
+.hero-projects:active {
+  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #D4855A;
+}
+
+.hero-contact:active {
+  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #D4855A;
+}
+
+.btn-big:active {
+  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #D4855A;
 }
 
 .about {
@@ -376,7 +394,7 @@ input {
 }
 
 .projects {
-  padding: 40px 5vw;
+  padding: 40px 140px;
 }
 
 .projects-title {
@@ -407,14 +425,14 @@ input {
   border: 1px solid #F2C99A;
   border-radius: clamp(8px, 1vw, 14px);
   overflow: hidden;
-  display: flex;           /* меняем grid на flex */
-  flex-direction: column;  /* чтобы контент тянулся вниз */
-  width: 100%;             /* убираем max-width */
+  display: flex;         
+  flex-direction: column; 
+  width: 100%;        
 }
 
 .project-img {
   width: 100%;
-  height: 15vw;            /* высота изображения — через vw, масштабируется */
+  height: 15vw;           
   max-height: 200px;
   object-fit: cover;
   display: block;
@@ -448,7 +466,7 @@ input {
   display: flex;
   gap: clamp(5px, 0.7vw, 10px);
   flex-wrap: wrap;
-  margin-top: auto; /* прижимает стек к низу описания */
+  margin-top: auto; 
 }
 
 .project-card-stack span {
@@ -470,12 +488,12 @@ input {
   grid-template-columns: 3fr 1fr 1fr;
   gap: clamp(5px, 0.7vw, 10px);
   align-items: stretch;
-  margin-top: auto; /* прижимает кнопки к низу карточки */
+  margin-top: auto;
 }
 
 .project-card-actions a {
   border: 2px solid #D4855A;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -506,8 +524,127 @@ input {
 .btn-small:hover {
   background-color: #D4855A;
   color: var(--body-bgcolor);
+  transform: translateY(-3px);
+}
+
+.btn-small:active {
+  transform: translateY(0);
+  transform: scale(0.98);
 }
 
 .btn-big:hover {
   transform: translateY(-3px);
+}
+
+.btn-big:active {
+  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #D4855A;
+}
+
+.contact {
+  padding: 50px 80px 40px 140px;
+}
+
+.contact-title {
+  font-size: clamp(22px, 3vw, 38px);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #D4855A;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-letter-layout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  border: #D4855A solid 2px;
+  border-radius: 20px;
+  padding: 30px 20px;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-label {
+  padding: 20px 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-input {
+  border: #D4855A solid 2px;
+  border-radius: 10px;
+
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s ease;
+
+  padding: 10px;
+  user-select: none;
+}
+
+.contact-input:focus {
+  transform: scale(1.01);
+}
+
+.contact-textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  border: #D4855A solid 2px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  user-select: none;
+  resize: vertical;
+  vertical-align: top;
+  outline: none;
+  min-height: 100px;
+  background: transparent;
+  text-align: start;
+  resize: none;
+  transition: 0.3s ease;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #33333377;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-textarea:focus {
+  transform: scale(1.01);
+}
+
+.contact-send {
+  margin: 20px 0 0 0;
+  padding: 14px;
+  font-size: clamp(11px, 1vw, 14px);
+  font-weight: bold;
+  background-color: #D4855A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-send:hover {
+  transform: translateY(-3px);
+  background-color: 	#C4704A;
+}
+
+.contact-send:active {
+  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #D4855A;
 }
