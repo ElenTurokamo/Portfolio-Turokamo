@@ -11,24 +11,6 @@ function Projects() {
         githubUrl: 'https://github.com/ElenTurokamo/Portfolio-Turokamo',
         image: Card1,
     },
-        {
-        id: 1,
-        title: 'Personal Portfolio',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor',
-        stack: ['html', 'css', 'react'],
-        liveUrl: 'https://...',
-        githubUrl: 'https://github.com/ElenTurokamo/Portfolio-Turokamo',
-        image: Card1,
-    },
-        {
-        id: 1,
-        title: 'Personal Portfolio',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor',
-        stack: ['html', 'css', 'react'],
-        liveUrl: 'https://...',
-        githubUrl: 'https://github.com/ElenTurokamo/Portfolio-Turokamo',
-        image: Card1,
-    },
     ]
     
     return (

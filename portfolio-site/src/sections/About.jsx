@@ -1,4 +1,4 @@
-import icon from "../assets/icon.png";
+import icon from "../assets/icon.gif";
 import sfx from "../assets/SFX.png";
 
 function About() {
@@ -25,8 +25,9 @@ function About() {
                 </div>
 
                 <div className="about-image">
-                    <img src={icon} alt="About me" className="about-img" />
                     <img src={sfx} alt="effects" className="about-sfx" />
+                    <img src={icon} alt="About me" className="about-img" />
+
                 </div>
 
                 </div>
