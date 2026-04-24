@@ -543,22 +543,22 @@ input {
 }
 
 .contact {
-  padding: 50px 80px 40px 140px;
+  padding: 80px 140px;
 }
 
 .contact-title {
   font-size: clamp(22px, 3vw, 38px);
   text-align: center;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: #D4855A;
 }
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: stretch;
 }
 
 .contact-letter-layout {
@@ -647,4 +647,91 @@ input {
   transform: translateY(0);
   transform: scale(0.98);
   background-color: #D4855A;
+}
+
+.contact-info-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-socials {
+  border: solid #D4855A 2px; 
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  padding: 20px;;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  border: solid #D4855A 2px; 
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+  padding: 20px;;
+  color: var(--body-bgcolor);
+  padding: 30px 10px 30px 30px;
+  font-size: 20px;
+  background-color: #D4855A;
+}
+
+.contact-social-label {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.contact-social-links {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.contact-social-list {
+  padding: 20px 0 0 20px;
+}
+
+.contact-social-link {
+  border: 2px solid #D4855A;
+  color: #D4855A;
+  border-radius: 10px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.contact-social-link:hover {
+  background-color: #D4855A;
+  color: var(--body-bgcolor);
+  transform: translateY(-3px);
+}
+
+.contact-social-link:active {
+  transform: translateY(0);
+  transform: scale(0.98);
+  background-color: #D4855A;
+}
+
+.footer {
+  background-color: var(--header-bgcolor);
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-container p {
+  color: #333;
+  font-size: 14px;
 }
