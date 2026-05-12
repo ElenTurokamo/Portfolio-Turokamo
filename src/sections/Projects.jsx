@@ -5,9 +5,9 @@ function Projects() {
     {
         id: 1,
         title: 'Personal Portfolio',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor',
+        description: 'My personal portfolio website built with React, showcasing my projects and skills.',
         stack: ['html', 'css', 'react'],
-        liveUrl: 'https://...',
+        liveUrl: 'https://elenturokamo.github.io/Portfolio-Turokamo/#',
         githubUrl: 'https://github.com/ElenTurokamo/Portfolio-Turokamo',
         image: Card1,
     },

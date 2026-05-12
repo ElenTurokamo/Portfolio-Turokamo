@@ -1,5 +1,5 @@
 # SleepyFramework Portfolio
 
 ```
-A portfolio site for an Independant developer.
+A portfolio site for an Independent developer.
 ```
