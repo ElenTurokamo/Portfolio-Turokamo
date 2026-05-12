@@ -11,11 +11,11 @@ function Experience() {
                         <div className="exp-year-circle">2025</div>
                         
                         <div className="exp-card">
-                            <h3 className="exp-position">Self-Employed Developer</h3>
-                            <span className="exp-company">at Company Name</span>
+                            <h3 className="exp-position">Developer</h3>
+                            <span className="exp-company">Self-Employed</span>
 
                             <p className="exp-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                At this period I was learning Python while developing Telegram bots and C# while working on my Indie games.
                             </p>
                         </div>
                     </li>
@@ -24,11 +24,11 @@ function Experience() {
                         <div className="exp-year-circle">2026</div>
                         
                         <div className="exp-card">
-                            <h3 className="exp-position">Self-Employed Developer</h3>
-                            <span className="exp-company">at Company Name</span>
+                            <h3 className="exp-position">IT Specialist</h3>
+                            <span className="exp-company">IT Support Group</span>
 
                             <p className="exp-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                I was working on IT support, troubleshooting hardware and software issues, and providing technical assistance to users. Also I developed an AI assistent for company CRM system, which helped to automate some of the routine tasks and improve overall efficiency.
                             </p>
                         </div>
                     </li>
