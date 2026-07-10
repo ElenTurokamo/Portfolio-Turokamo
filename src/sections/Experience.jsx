@@ -33,8 +33,20 @@ function Experience() {
                                 providing technical support to customers and troubleshooting hardware and software issues.
                             </p>
                         </div>
+
+                        <div className="exp-card">
+                            <h3 className="exp-position">System Administrator</h3>
+                            <span className="exp-company">Tikkurila</span>
+
+                            <p className="exp-description">
+                                I was responsible for managing and maintaining the company's IT infrastructure, including servers, networks, and security systems.
+                            </p>
+                        </div>
                     </li>
-                    
+
+                    <li className="exp-item">
+                        <div className="exp-year-circle">...</div>
+                    </li>
 
                 </ul>
             </div>
