@@ -783,6 +783,17 @@ input {
   background-color: var(--accent-strong);
 }
 
+.contact-status {
+  margin-top: 12px;
+  font-size: 14px;
+}
+.contact-status--success {
+  color: #4CAF50;
+}
+.contact-status--error {
+  color: #E74C3C;
+}
+
 .footer {
   background-color: var(--header-bgcolor);
   padding: 20px 0;
