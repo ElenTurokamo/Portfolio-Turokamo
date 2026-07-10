@@ -5,12 +5,40 @@
 }
 
 :root {
-  --body-bgcolor: #F5EDD8;
+  /* ===== Дневная тема (по умолчанию) ===== */
+  --body-bgcolor: #F5EDD8;      /* Молочный — фон / текст на тёмном */
   --header-bgcolor: var(--body-bgcolor);
 
-  --header-height: 60px;
+  --accent-color: #EAD9BC;      /* Тёплый крем — surface / cards */
+  --accent-soft: #F2C99A;       /* Светлый мех — highlights / tags / borders */
+  --accent-strong: #D4855A;     /* Терракота — hover / кнопки / основной акцент */
+  --accent-strong-hover: #C4704A; /* Глубокий рыжий — активные состояния */
+  --accent-peach: #E8A97A;      /* Тёплый персик — доп. акцент */
 
-  --accent-color: #EAD9BC;
+  --text-color: #333;
+  --contact-info-color: #D4855A;
+  --hero-accent-strong: #D4855A;
+  --hero-accent-soft: #F2C99A;
+
+  --header-height: 60px;
+}
+
+/* ===== Ночная тема (18:00–6:00) ===== */
+:root.theme-night {
+  --body-bgcolor: #2C1F38;      /* Полночь — тёмный фон */
+  --header-bgcolor: var(--body-bgcolor);
+
+  --accent-color: #3A2A4D;      /* производный тёмно-фиолетовый surface */
+  --accent-soft: #4A3A63;       /* производный приглушённый бордер */
+  --accent-strong: #5B8AB5;     /* ZZZ синий — основной ночной акцент */
+  --accent-strong-hover: #4A7295; /* затемнённый синий для active */
+  --accent-peach: #7BA3C9;      /* светлый холодный акцент */
+
+  --text-color: #E8E3EE;        /* светлый текст для тёмного фона */
+  --contact-info-color: #E8E3EE; /* цвет контактной информации */
+  --hero-accent-strong: #E8E3EE;
+  --hero-accent-soft: #7BA3C9;
+
 }
 
 main {
@@ -20,7 +48,8 @@ main {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--body-bgcolor);
-  color: #333;
+  color: var(--text-color);
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 
 a {
@@ -40,7 +69,7 @@ input {
   width: 100%;
   padding: 10px 0;
   height: var(--header-height);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.6s ease;
   z-index: 1100;
   background: var(--header-bgcolor);
 }
@@ -49,10 +78,11 @@ input {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   border-radius: 50%;
   margin-left: 4px;
-  vertical-align: super; 
+  vertical-align: super;
+  transition: background-color 0.6s ease;
 }
 
 .header.show {
@@ -88,11 +118,11 @@ input {
 
 .nav-list a:hover {
   transform: translateY(-3px);
-  color: #D4855A;
+  color: var(--accent-strong);
 }
 
 .nav-list a:active {
-  color: #D4855A;
+  color: var(--accent-strong);
   transform: scale(0.98);
 }
 
@@ -108,12 +138,12 @@ input {
 
 .hero-status {
   font-size: 12px;
-  color: #F5EDD8;
+  color: var(--body-bgcolor);
   padding: 5px 20px;
   margin: 15px 0;
-  border: 3px solid #F2C99A;
+  border: 3px solid var(--hero-accent-soft);
   border-radius: 40px;
-  background-color: #D4855A;
+  background-color: var(--hero-accent-strong);
 }
 
 .hero-title {
@@ -123,7 +153,7 @@ input {
 }
 
 .hero-name {
-  color: #D4855A;
+  color: var(--accent-strong);
 }
 
 .hero-emoji {
@@ -135,14 +165,14 @@ input {
 .hero-subtitle {
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
   margin: 10px 0 20px 0;
   opacity: 0.9;
 }
 
 .hero-about {
   font-size: 14px;
-  color: #333;
+  color: var(--text-color);
   max-width: 600px;
   text-align: center;
 }
@@ -155,9 +185,9 @@ input {
 
 .hero-projects {
   padding: 10px 20px;
-  background-color: #D4855A;
+  background-color: var(--hero-accent-strong);
   color: var(--body-bgcolor);
-  border: 3px solid #D4855A;
+  border: 3px solid var(--hero-accent-soft);
   border-radius: 40px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -165,9 +195,9 @@ input {
 
 .hero-contact {
   padding: 10px 20px;
-  background-color: #D4855A;
+  background-color: var(--hero-accent-strong);
   color: var(--body-bgcolor);
-  border: 3px solid #D4855A;
+  border: 3px solid var(--hero-accent-soft);
   border-radius: 40px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -186,19 +216,19 @@ input {
 .hero-projects:active {
   transform: translateY(0);
   transform: scale(0.98);
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
 }
 
 .hero-contact:active {
   transform: translateY(0);
   transform: scale(0.98);
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
 }
 
 .btn-big:active {
   transform: translateY(0);
   transform: scale(0.98);
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
 }
 
 .about {
@@ -284,7 +314,7 @@ input {
 
 .skill-stacks {
   background-color: var(--accent-color);
-  border: solid #F2C99A 2px;
+  border: solid var(--accent-soft) 2px;
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -296,7 +326,7 @@ input {
 }
 
 .skill {
-  color: #D4855A;
+  color: var(--accent-strong);
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -307,14 +337,14 @@ input {
   display: inline-block;
   padding: 5px 10px;
   margin: 5px;
-  border: 2px solid #D4855A;
+  border: 2px solid var(--accent-strong);
   border-radius: 20px;
   background-color: var(--body-bgcolor);
   transition: ease 0.3s;
 }
 
 .stack:hover {
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: var(--body-bgcolor);
 }
 
@@ -352,8 +382,8 @@ input {
   background: linear-gradient(
     to bottom,
     transparent 10%,
-    #D4855A 20%,
-    #D4855A 80%,
+    var(--accent-strong) 20%,
+    var(--accent-strong) 80%,
     transparent 90%
   );
 }
@@ -369,7 +399,7 @@ input {
   height: 70px;
   border-radius: 50%;
 
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: white;
 
   display: flex;
@@ -397,7 +427,7 @@ input {
 .exp-card {
   flex: 1;
   background-color: var(--accent-color);
-  border: 1px solid #F2C99A;
+  border: 1px solid var(--accent-soft);
   border-radius: 14px;
   padding: 25px;
 }
@@ -410,7 +440,7 @@ input {
 .exp-company {
   margin: 10px 0;
   font-size: 16px;
-  color: #D4855A;
+  color: var(--accent-strong);
 }
 
 .exp-description {
@@ -434,7 +464,7 @@ input {
   text-align: center;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #D4855A;
+  color: var(--accent-strong);
 }
 
 .projects-about {
@@ -442,7 +472,7 @@ input {
   text-align: center;
   max-width: 600px;
   margin: 0 auto 40px auto;
-  color: #333;
+  color: var(--text-color);
 }
 
 .projects-grid {
@@ -454,7 +484,7 @@ input {
 
 .project-card {
   background-color: var(--accent-color);
-  border: 1px solid #F2C99A;
+  border: 1px solid var(--accent-soft);
   border-radius: clamp(8px, 1vw, 14px);
   overflow: hidden;
   display: flex;         
@@ -490,7 +520,7 @@ input {
 
 .project-card-description {
   font-size: clamp(11px, 1vw, 14px);
-  color: #333;
+  color: var(--text-color);
 }
 
 .project-card-stack {
@@ -504,14 +534,14 @@ input {
 .project-card-stack span {
   font-size: clamp(10px, 0.8vw, 12px);
   padding: clamp(3px, 0.4vw, 5px) clamp(8px, 1vw, 15px);
-  border: 2px solid #D4855A;
+  border: 2px solid var(--accent-strong);
   border-radius: 20px;
   background-color: var(--body-bgcolor);
   transition: ease 0.3s;
 }
 
 .project-card-stack span:hover {
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: var(--body-bgcolor);
 }
 
@@ -524,7 +554,7 @@ input {
 }
 
 .project-card-actions a {
-  border: 2px solid #D4855A;
+  border: 2px solid var(--accent-strong);
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -538,7 +568,7 @@ input {
 .btn-big {
   font-size: clamp(11px, 1vw, 14px);
   font-weight: bold;
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: white;
 }
 
@@ -549,12 +579,12 @@ input {
 
 .btn-small {
   background-color: var(--body-bgcolor);
-  color: #D4855A;
+  color: var(--accent-strong);
   padding: 0;
 }
 
 .btn-small:hover {
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: var(--body-bgcolor);
   transform: translateY(-3px);
 }
@@ -571,7 +601,7 @@ input {
 .btn-big:active {
   transform: translateY(0);
   transform: scale(0.98);
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
 }
 
 .contact {
@@ -583,7 +613,7 @@ input {
   text-align: center;
   font-weight: bold;
   margin-bottom: 30px;
-  color: #D4855A;
+  color: var(--accent-strong);
 }
 
 .contact-container {
@@ -598,25 +628,26 @@ input {
   flex-direction: column;
   margin-top: 20px;
 
-  border: #D4855A solid 2px;
+  border: var(--accent-strong) solid 2px;
   border-radius: 20px;
   padding: 30px 20px;
 }
 
 .contact-subtitle {
   font-size: 18px;
-  color: #333;
+  color: var(--text-color);
 }
 
 .contact-label {
   padding: 20px 0 10px 0;
   font-size: 18px;
-  color: #333;
+  color: var(--text-color);
 }
 
 .contact-input {
-  border: #D4855A solid 2px;
+  border: var(--accent-strong) solid 2px;
   border-radius: 10px;
+  color: var(--text-color);
 
   background-color: transparent;
   outline: none;
@@ -633,8 +664,9 @@ input {
 .contact-textarea {
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
-  border: #D4855A solid 2px;
+  border: var(--accent-strong) solid 2px;
   border-radius: 10px;
+  color: var(--text-color);
   padding: 5px 10px;
   user-select: none;
   resize: vertical;
@@ -649,7 +681,7 @@ input {
 
 .contact-input::placeholder,
 .contact-textarea::placeholder {
-  color: #33333377;
+  color: color-mix(in srgb, var(--text-color) 47%, transparent);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -662,23 +694,23 @@ input {
   padding: 14px;
   font-size: clamp(11px, 1vw, 14px);
   font-weight: bold;
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .contact-send:hover {
   transform: translateY(-3px);
-  background-color: 	#C4704A;
+  background-color: var(--accent-strong-hover);
 }
 
 .contact-send:active {
   transform: translateY(0);
   transform: scale(0.98);
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
 }
 
 .contact-info-layout {
@@ -688,24 +720,24 @@ input {
 }
 
 .contact-socials {
-  border: solid #D4855A 2px; 
+  border: solid var(--accent-strong) 2px; 
   margin: 20px 0 0 0;
   border-radius: 20px;
   padding: 20px;;
-  color: #333;
+  color: var(--text-color);
   width: 100%;
   box-sizing: border-box;
 }
 
 .contact-info {
-  border: solid #D4855A 2px; 
+  border: solid var(--contact-info-color) 2px; 
   margin: 20px 0 0 0;
   border-radius: 20px;
   padding: 20px;;
   color: var(--body-bgcolor);
   padding: 30px 10px 30px 30px;
   font-size: 20px;
-  background-color: #D4855A;
+  background-color: var(--contact-info-color);
 }
 
 .contact-social-label {
@@ -726,8 +758,8 @@ input {
 }
 
 .contact-social-link {
-  border: 2px solid #D4855A;
-  color: #D4855A;
+  border: 2px solid var(--accent-strong);
+  color: var(--accent-strong);
   border-radius: 10px;
   padding: 2px;
   display: flex;
@@ -740,7 +772,7 @@ input {
 }
 
 .contact-social-link:hover {
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
   color: var(--body-bgcolor);
   transform: translateY(-3px);
 }
@@ -748,7 +780,7 @@ input {
 .contact-social-link:active {
   transform: translateY(0);
   transform: scale(0.98);
-  background-color: #D4855A;
+  background-color: var(--accent-strong);
 }
 
 .footer {
@@ -764,7 +796,7 @@ input {
 }
 
 .footer-container p {
-  color: #33333393;
+  color: color-mix(in srgb, var(--text-color) 58%, transparent);
   font-size: 14px;
 }
 
@@ -787,7 +819,7 @@ input {
     display: block;
     width: 24px;
     height: 2px;
-    background-color: #333;
+    background-color: var(--text-color);
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform-origin: center;
@@ -830,12 +862,12 @@ input {
 .mobile-nav-list a {
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    color: var(--text-color);
     transition: color 0.2s ease;
 }
 
 .mobile-nav-list a:hover {
-    color: #D4855A;
+    color: var(--accent-strong);
 }
 
 @media (max-width: 1024px) {
@@ -884,7 +916,7 @@ input {
 
     .mobile-menu {
       display: block;
-      border-top: 1px solid #F2C99A;
+      border-top: 1px solid var(--accent-soft);
     }
 
     .about,
@@ -961,16 +993,8 @@ input {
 
     .exp-list::before {
         left: 25px;
-        top: 0px;    
-        bottom: 50px; 
-    }
-
-    @media (max-width: 768px) {
-      .exp-list::before {
-        left: 25px;
-        top: 0px;
+        top: 0;
         bottom: 0;
-      }
     }
 
     .exp-year-circle {
