@@ -38,7 +38,10 @@ function Header() {
             <header className={showHeader ? 'header show' : 'header hide'}>
                 <div className="container">
                     <nav className="navbar">
-                        <a href="#" className="logo">Elen</a>
+                        <a href="#" className="logo">
+                            elen<span className="header-dot"></span>
+                        </a>
+                        
 
                         <ul className="nav-list">
                             <li><a href="#">Home</a></li>
