@@ -6,14 +6,14 @@
 
 :root {
   /* ===== Дневная тема (по умолчанию) ===== */
-  --body-bgcolor: #F5EDD8;      /* Молочный — фон / текст на тёмном */
+  --body-bgcolor: #F5EDD8;      
   --header-bgcolor: var(--body-bgcolor);
 
-  --accent-color: #EAD9BC;      /* Тёплый крем — surface / cards */
-  --accent-soft: #F2C99A;       /* Светлый мех — highlights / tags / borders */
-  --accent-strong: #D4855A;     /* Терракота — hover / кнопки / основной акцент */
-  --accent-strong-hover: #C4704A; /* Глубокий рыжий — активные состояния */
-  --accent-peach: #E8A97A;      /* Тёплый персик — доп. акцент */
+  --accent-color: #EAD9BC;     
+  --accent-soft: #F2C99A;     
+  --accent-strong: #D4855A;  
+  --accent-strong-hover: #C4704A; 
+  --accent-peach: #E8A97A;     
 
   --text-color: #333;
   --contact-info-color: #D4855A;
@@ -25,17 +25,17 @@
 
 /* ===== Ночная тема (18:00–6:00) ===== */
 :root.theme-night {
-  --body-bgcolor: #2C1F38;      /* Полночь — тёмный фон */
+  --body-bgcolor: #2C1F38;     
   --header-bgcolor: var(--body-bgcolor);
 
-  --accent-color: #3A2A4D;      /* производный тёмно-фиолетовый surface */
-  --accent-soft: #4A3A63;       /* производный приглушённый бордер */
-  --accent-strong: #5B8AB5;     /* ZZZ синий — основной ночной акцент */
-  --accent-strong-hover: #4A7295; /* затемнённый синий для active */
-  --accent-peach: #7BA3C9;      /* светлый холодный акцент */
+  --accent-color: #3A2A4D;    
+  --accent-soft: #4A3A63;      
+  --accent-strong: #5B8AB5; 
+  --accent-strong-hover: #4A7295; 
+  --accent-peach: #7BA3C9;    
 
-  --text-color: #E8E3EE;        /* светлый текст для тёмного фона */
-  --contact-info-color: #E8E3EE; /* цвет контактной информации */
+  --text-color: #E8E3EE;        
+  --contact-info-color: #E8E3EE; 
   --hero-accent-strong: #E8E3EE;
   --hero-accent-soft: #7BA3C9;
 
