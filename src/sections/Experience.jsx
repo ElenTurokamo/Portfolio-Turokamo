@@ -24,28 +24,30 @@ function Experience() {
                     <li className="exp-item">
                         <div className="exp-year-circle">2026</div>
                         
-                        <div className="exp-card">
-                            <h3 className="exp-position">First-line service center specialist</h3>
-                            <span className="exp-company">IT Support Group</span>
+                        <div className="exp-cards">
+                            <div className="exp-card">
+                                <h3 className="exp-position">First-line service center specialist</h3>
+                                <span className="exp-company">IT Support Group</span>
 
                             <p className="exp-description">
                                 I used to work in a service center, where I was responsible for 
                                 providing technical support to customers and troubleshooting hardware and software issues.
                             </p>
-                        </div>
+                            </div>
+                            <div className="exp-card">
+                                <h3 className="exp-position">System Administrator</h3>
+                                <span className="exp-company">Tikkurila</span>
 
-                        <div className="exp-card">
-                            <h3 className="exp-position">System Administrator</h3>
-                            <span className="exp-company">Tikkurila</span>
-
-                            <p className="exp-description">
-                                I was responsible for managing and maintaining the company's IT infrastructure, including servers, networks, and security systems.
-                            </p>
+                                <p className="exp-description">
+                                    I was responsible for managing and maintaining the company's IT infrastructure, including servers, networks, and security systems.
+                                </p>
+                            </div>
+                            
                         </div>
                     </li>
 
                     <li className="exp-item">
-                        <div className="exp-year-circle">...</div>
+                        <div className="exp-year-circle">Zzz</div>
                     </li>
 
                 </ul>

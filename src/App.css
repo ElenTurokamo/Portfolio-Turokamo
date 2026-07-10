@@ -350,7 +350,7 @@ input {
 
 .exp-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
 }
 
@@ -377,6 +377,13 @@ input {
   transform: scale(1.1);
 }
 
+.exp-cards {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  flex: 1;
+}
+
 .exp-card {
   flex: 1;
   background-color: var(--accent-color);
@@ -399,6 +406,13 @@ input {
 .exp-description {
   margin-top: 15px;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .exp-cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .projects {
@@ -937,8 +951,16 @@ input {
 
     .exp-list::before {
         left: 25px;
-        top: 35px;    
+        top: 0px;    
         bottom: 50px; 
+    }
+
+    @media (max-width: 768px) {
+      .exp-list::before {
+        left: 25px;
+        top: 0px;
+        bottom: 0;
+      }
     }
 
     .exp-year-circle {
