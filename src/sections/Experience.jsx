@@ -11,11 +11,12 @@ function Experience() {
                         <div className="exp-year-circle">2025</div>
                         
                         <div className="exp-card">
-                            <h3 className="exp-position">Developer</h3>
+                            <h3 className="exp-position">Entrypoint</h3>
                             <span className="exp-company">Self-Employed</span>
 
                             <p className="exp-description">
-                                At this period I was learning Python while developing Telegram bots and C# while working on my Indie games.
+                                This is my first experience in the IT field, where I started to learn programming and web development. 
+                                I worked on small projects and gained valuable skills in coding, problem-solving, and project management.
                             </p>
                         </div>
                     </li>
@@ -24,11 +25,12 @@ function Experience() {
                         <div className="exp-year-circle">2026</div>
                         
                         <div className="exp-card">
-                            <h3 className="exp-position">IT Specialist</h3>
+                            <h3 className="exp-position">First-line service center specialist</h3>
                             <span className="exp-company">IT Support Group</span>
 
                             <p className="exp-description">
-                                I was working on IT support, troubleshooting hardware and software issues, and providing technical assistance to users. Also I developed an AI assistent for company CRM system, which helped to automate some of the routine tasks and improve overall efficiency.
+                                I used to work in a service center, where I was responsible for 
+                                providing technical support to customers and troubleshooting hardware and software issues.
                             </p>
                         </div>
                     </li>
