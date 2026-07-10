@@ -5,7 +5,7 @@ function Skills() {
             <div className="skills-grid">
                 
                 <div className="skill-stacks">
-                    <h3 className="skill">Frontend</h3>
+                    <h3 className="skill">Frontend 🎨</h3>
                     <div className="skill-stack">
                         <span className="stack">React</span>
                         <span className="stack">CSS</span>
@@ -16,24 +16,23 @@ function Skills() {
                 </div>
 
                 <div className="skill-stacks">
-                    <h3 className="skill">Backend</h3>    
+                    <h3 className="skill">Backend ⚙️</h3>    
                     <div className="skill-stack">
                         <span className="stack">SQL</span>
                         <span className="stack">Node.js</span>
-                        <span className="stack">Express</span>
-                        <span className="stack">MongoDB</span>
-                        <span className="stack">PostgreSQL</span>
+                        <span className="stack">Python</span>
+
                     </div>
                 </div>
 
                 <div className="skill-stacks">
-                    <h3 className="skill">Python</h3>
+                    <h3 className="skill">Networks 🌐</h3>
                     <div className="skill-stack">
-                        <span className="stack">Django</span>
-                        <span className="stack">Flask</span>
-                        <span className="stack">Pandas</span>
-                        <span className="stack">NumPy</span>
-                        <span className="stack">Matplotlib</span>
+                        <span className="stack">IP Routing</span>
+                        <span className="stack">Switching</span>
+                        <span className="stack">VLAN</span>
+                        <span className="stack">TCP/IP</span>
+                        <span className="stack">Network Security</span>
                     </div>
                 </div>
 
