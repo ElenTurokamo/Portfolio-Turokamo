@@ -22,7 +22,7 @@ function Contact() {
         }
 
         setStatus("sending");
-
+        
         emailjs
             .send(
                 SERVICE_ID,
@@ -31,6 +31,7 @@ function Contact() {
                     from_name: formData.name,
                     from_email: formData.email,
                     message: formData.message,
+                    time: new Date().toLocaleString(),
                 },
                 PUBLIC_KEY
             )
