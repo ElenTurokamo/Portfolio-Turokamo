@@ -1,16 +1,30 @@
 import Card1 from '../assets/Card-1.png'
+import Card2 from '../assets/Card-2.png'
 
 function Projects() {
+    // Добавляя блоки в данный масисв можно добавить новые проекты на страницу. 
+    // Каждый объект в массиве представляет отдельный проект с его данными, такими как название, описание, стек технологий, 
+    // ссылки на живую версию и репозиторий GitHub, а также изображение проекта.
     const projects = [
-    {
-        id: 1,
-        title: 'Personal Portfolio',
-        description: 'My personal portfolio website built with React, showcasing my projects and skills.',
-        stack: ['html', 'css', 'react'],
-        liveUrl: 'https://elenturokamo.github.io/Portfolio-Turokamo/#',
-        githubUrl: 'https://github.com/ElenTurokamo/Portfolio-Turokamo',
-        image: Card1,
-    },
+        {
+            id: 1,
+            title: 'Personal Portfolio',
+            description: 'My personal portfolio website built with React, showcasing my projects and skills.',
+            stack: ['html', 'css', 'react'],
+            liveUrl: 'https://elenturokamo.github.io/Portfolio-Turokamo/#',
+            githubUrl: 'https://github.com/ElenTurokamo/Portfolio-Turokamo',
+            image: Card1,
+        },
+
+            {
+            id: 2,
+            title: 'system',
+            description: 'Solo Leveling inspired Telegram bot, that provides gamified way of self development and self-improvement.',
+            stack: ['python', 'aiogram', 'sqlalchemy'],
+            liveUrl: 'https://t.me/turokamo_systembot',
+            githubUrl: 'https://github.com/ElenTurokamo/system',
+            image: Card2,
+        },
     ]
     
     return (
